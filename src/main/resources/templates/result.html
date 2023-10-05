@@ -1,0 +1,14 @@
+```html
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Form Result</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form Submission Result</h1>
+<p th:text="'Hello, ' + ${user.name} + '! Your form has been submitted successfully.'"></p>
+<p th:text="'Your email: ' + ${user.email}"></p>
+</body>
+</html>
+```

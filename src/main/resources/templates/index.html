@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jenkins Trigger</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/trigger" method="post">
+        <button type="submit">Trigger Jenkins Job</button>
+    </form>
+
+    <!-- Display confirmation message -->
+    <div th:if="${confirmation != null}">
+        <p th:text="${confirmation}"></p>
+    </div>
+</body>
+</html>
